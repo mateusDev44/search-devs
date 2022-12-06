@@ -1,0 +1,15 @@
+.example-full-width {
+  width: 100% !important;
+}
+
+::ng-deep .mat-mdc-text-field-wrapper {
+  height: 48px !important;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  flex: auto;
+
+  .material-icons {
+    padding-right: 34px;
+  }
+
+}

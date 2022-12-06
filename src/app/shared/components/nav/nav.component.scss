@@ -1,0 +1,21 @@
+nav{
+  background-color: white;
+  padding-top: 20px;
+
+  .title {
+    font-family: "Nonito", sans-serif;
+    margin-top: 10px;
+  }
+
+
+  .button-search{
+      padding: 10px 24px;
+      gap: 8px;
+      width: 100%;
+      max-width: 248px;
+      height: 48px;
+      background-color: #8c19d2 !important;
+      border-radius: 6px;
+      color: white !important;
+  }
+}

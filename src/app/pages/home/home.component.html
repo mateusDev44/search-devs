@@ -1,0 +1,19 @@
+<div class="container">
+  <h2 class="title fs-80 fw-500 text-center blue-color">
+    Search
+    <span class="purple-color">d_evs</span>
+  </h2>
+
+  <div class="search">
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-12">
+        <app-input-search (typedUser)="typedUser($event)"></app-input-search>
+      </div>
+      <div class="col-md-2 col-12">
+        <button mat-flat-button (click)="search()" class="button-contact">
+          Buscar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

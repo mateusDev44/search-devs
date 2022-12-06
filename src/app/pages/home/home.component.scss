@@ -1,0 +1,28 @@
+.container {
+  position: relative;
+  top: 40%;
+  .title {
+    font-family: "Nonito", sans-serif;
+  }
+  .search {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .button-contact {
+    padding: 10px 24px;
+    gap: 8px;
+    width: 100%;
+    height: 48px;
+    background-color: #8c19d2 !important;
+    border-radius: 6px;
+    color: white !important;
+  }
+}
+
+
+@media (max-width: 532px) {
+  .title {
+    font-size: 45px !important;
+  }
+}

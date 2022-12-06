@@ -1,0 +1,16 @@
+<mat-form-field class="example-full-width" color="primary" appearance="outline">
+  <div class="d-flex negative-top-3">
+    <mat-icon class="gray-color material-icons">search</mat-icon>
+    <input
+      type="text"
+      (input)="returnsTypedUser(userName)"
+      #userNameTypeModel="ngModel"
+      [(ngModel)]="userName"
+      required
+      placeholder="Digite o username do usuário"
+      aria-label="Digite o username do usuário"
+      matInput
+    />
+  </div>
+  <mat-error *ngIf="this.userNameTypeModel.invalid">* Digite o nome do usuário</mat-error>
+</mat-form-field>

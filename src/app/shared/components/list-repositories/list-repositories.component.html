@@ -1,0 +1,22 @@
+<mat-list-item>
+  <div matListItemTitle class="fw-700 fs-20 cursor-pointer" (click)="goRepository(repository.html_url)">
+    {{ repository.name }}
+  </div>
+  <div matListItemLine class="mt-2">
+    {{ repository.description || 'Não possui descrição' }}
+  </div>
+  <div matListItemLine class="mt-3">
+    <i class="icon">
+      <img src="assets/images/icons/star.svg" alt="star" />
+    </i>
+    <span class="stargazers_count">
+      {{ repository.stargazers_count }}
+    </span>
+    <span class="updated_at fs-14 fw-400 fs-14 info-color">
+      <strong>•</strong>
+      Atualizado há
+      {{ returnsTheNumberOfDays(repository.updated_at) }} dias
+    </span>
+  </div>
+</mat-list-item>
+<mat-divider></mat-divider>

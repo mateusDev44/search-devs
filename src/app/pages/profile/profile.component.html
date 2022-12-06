@@ -1,0 +1,38 @@
+<ng-container *ngIf="loading">
+  <app-loading></app-loading>
+</ng-container>
+
+<app-nav [userName]="userName"></app-nav>
+
+<ng-container *ngIf="!loading && !notFound">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4 col-12">
+        <app-card-profile [user]="user"></app-card-profile>
+      </div>
+      <div class="col-md-8 col-12">
+        <mat-card>
+          <mat-list *ngIf="repositories.length">
+            <div *ngFor="let repository of repositories">
+              <app-list-repositories
+                [repository]="repository"
+              ></app-list-repositories>
+            </div>
+          </mat-list>
+
+          <div *ngIf="!repositories.length" class="mt-5">
+            <app-not-found
+              text="Não foi encontrado nenhum repositório."
+            ></app-not-found>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</ng-container>
+
+<div *ngIf="!loading && notFound" class="mt-5">
+  <app-not-found
+    text="Não foi encontrado nenhum usuario com esse userName."
+  ></app-not-found>
+</div>

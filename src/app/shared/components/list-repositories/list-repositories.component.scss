@@ -1,0 +1,40 @@
+
+  mat-list-item {
+    padding-bottom: 10px;
+  }
+
+  .icon {
+    img {
+      margin-top: -5px;
+    }
+  }
+
+  .stargazers_count {
+    margin-left: 3px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #4a5568;
+  }
+
+  .updated_at {
+    margin-left: 3px;
+  }
+
+  .mdc-list-item.mdc-list-item--with-three-lines {
+    height: 100% !important;
+  }
+
+  .mdc-list-item__primary-text {
+    color: black !important;
+  }
+
+  .mdc-list-item__secondary-text {
+    color: #4a5568 !important;
+  }
+
+  .mat-divider {
+    width: 95%;
+    margin: auto;
+  }
+
+

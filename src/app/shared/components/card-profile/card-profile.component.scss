@@ -1,0 +1,30 @@
+.list {
+  list-style-type: none;
+  padding: 0px;
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  color: #4a5568 !important;
+  li {
+    padding-bottom: 5px;
+  }
+}
+
+::ng-deep.mat-mdc-card {
+  box-shadow: 0px 0px 0px !important;
+}
+
+.button-contact {
+  padding: 10px 24px;
+  gap: 8px;
+  width: 280px;
+  height: 48px;
+  background-color: #8c19d2 !important;
+  border-radius: 6px;
+  color: white !important;
+}
+
+@media (max-width: 322px) {
+  .button-contact {
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,26 @@
+<nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 col-12">
+        <h2 class="title fs-32 fw-500 blue-color cursor-pointer" routerLink="/">
+          Search
+          <span class="purple-color">d_evs</span>
+        </h2>
+      </div>
+      <div class="col-md-8 col-12">
+        <div class="row">
+          <div class="col-md-10 col-12">
+            <app-input-search [userName]="userName" (typedUser)="newUserselected($event)"></app-input-search>
+          </div>
+          <div class="col-md-2 col-12">
+            <div class="d-flex justify-content-center">
+              <button mat-flat-button (click)="search()" class="button-search">
+                Buscar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
