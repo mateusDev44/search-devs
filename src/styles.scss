@@ -1,15 +1,9 @@
-
-@use '@angular/material' as mat;
-
-@include mat.core();
-
-$primary: #8c19d2;
-$secondary: #0069CA;
-
-
 @import "../node_modules/@angular/material/prebuilt-themes/purple-green.css";
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "./assets/styles/fonts.scss";
+@import "./assets/styles/colors.scss";
+@import "./assets/styles/utils.scss";
+@import "./assets/styles/cursor.scss";
 
 html,
 body {
@@ -20,52 +14,3 @@ body {
   margin: 0;
   font-family: "Inter", sans-serif;
 }
-
-.blue-color {
-  color: #0069ca;
-}
-
-.purple-color {
-  color: #8c19d2;
-}
-
-.gray-color {
-  color: #a0aec0;
-}
-
-.info-color {
-  color: #4a5568;
-}
-
-.negative-top-3 {
-  margin-top: -3px;
-}
-
-.mdc-text-field:not(.mdc-text-field--disabled) .mdc-text-field__input {
-  color: rgba(0, 0, 0, 0.87) !important;
-}
-
-
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  color: #A0AEC0 !important;
-}
-
-
-mat-card {
-  background: #ffffff !important;
-  border-radius: 4px !important;
-}
-
-
-.mat-divider {
-   border-top-color: #E2E8F0;
-}
-
-
-
-.cursor-pointer{
-  cursor: pointer;
-}
-
-

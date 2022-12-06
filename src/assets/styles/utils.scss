@@ -1,0 +1,32 @@
+
+.negative-top-3 {
+  margin-top: -3px;
+}
+
+.mdc-text-field:not(.mdc-text-field--disabled) .mdc-text-field__input {
+  color: rgba(0, 0, 0, 0.87) !important;
+}
+
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #A0AEC0 !important;
+}
+
+
+mat-card {
+  background: #ffffff !important;
+  border-radius: 4px !important;
+}
+
+
+.mat-divider {
+   border-top-color: #E2E8F0;
+}
+
+
+
+.cursor-pointer{
+  cursor: pointer;
+}
+

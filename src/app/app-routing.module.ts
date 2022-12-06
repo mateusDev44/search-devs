@@ -12,6 +12,7 @@ const routes: Routes = [
     loadChildren: () =>
       import('./pages/profile/profile.module').then((m) => m.ProfileModule),
   },
+  { path: '**', redirectTo: '', pathMatch: 'full' },
 ]
 
 @NgModule({
