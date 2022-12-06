@@ -54,13 +54,23 @@ export class ProfileComponent implements OnInit {
       .toPromise()
       .then((response) => {
         if (response) {
-          this.repositories = response;
+          this.repositories = this.sortAlphabeticalOrder(response);
         }
 
         setTimeout(() => {
           this.loading = false;
         }, 2000)
       })
+  }
+
+  sortAlphabeticalOrder(repositories: Repository[]) {
+    const sortedArray = repositories.sort((x, y) => {
+      let a = x.stargazers_count,
+        b = y.stargazers_count;
+      return a == b ? 0 : a < b ? 1 : -1;
+    })
+
+    return sortedArray;
   }
 
 
