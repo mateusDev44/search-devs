@@ -23,6 +23,6 @@ Também e criado todas as interfaces dos dados quê vão ser retornados, para po
 
 Para rodar o build basta executar no terminal o comando ng build.
 
-## paraq mais informações
+## Para mais informações
 
 Para obter mais ajuda sobre o Angular CLI, use `ng help` ou confira a página [Angular CLI Overview and Command Reference](https://angular.io/cli).
