@@ -1,6 +1,6 @@
 # SearchDevs
 
-Projeto construido com o Angular da versão mais atualizada.
+Projeto construido com o Angular 15.0.0 a versão mais atualizada e com o node na versão v16.16.0.
 
 ## Rodar o projeto
 
